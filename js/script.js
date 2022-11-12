@@ -4,7 +4,13 @@ let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.
 let playerMove = 'nieznany ruch';
 let gameScore = 'nierostrzygnięty'
 
-if (randomNumber == '1') {
+
+
+playerMove = getMoveName(playerInput);
+computerMove = getMoveName(randomNumber);
+gameScore = displayResult(computerMove, playerMove);
+
+/*if (randomNumber == '1') {
     computerMove = 'kamień';
 } else if (randomNumber == '2') {
     computerMove = 'papier';
@@ -45,3 +51,4 @@ if (playerInput == randomNumber) {
 }
 
 printMessage(gameScore);
+*/
