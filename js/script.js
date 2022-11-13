@@ -1,11 +1,11 @@
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-let computerMove = 'nieznany ruch';
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-let playerMove = 'nieznany ruch';
-let gameScore = 'nierostrzygnięty'
+let paperButton = document.getElementById('play-paper');
 
+paperButton.addEventListener('click', paperClicked);
 
+let rockButton = document.getElementById('play-rock');
 
-playerMove = getMoveName(playerInput);
-computerMove = getMoveName(randomNumber);
-gameScore = displayResult(computerMove, playerMove);
+rockButton.addEventListener('click', rockClicked);
+
+let scissorsButton = document.getElementById('play-scissors');
+
+scissorsButton.addEventListener('click', scissorsClicked);

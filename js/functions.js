@@ -42,3 +42,28 @@ function displayResult(argComputerMove, argPlayerMove) {
         printMessage('Ups... nie działa, czy wybrałeś liczbę z zakresu 1-3 ?');
     }
 }
+
+function playGame(playerInput){
+    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    let computerMove = 'nieznany ruch';
+    let playerMove = 'nieznany ruch';
+    let gameScore = 'nierostrzygnięty'
+
+
+    clearMessages();
+    playerMove = getMoveName(playerInput);
+    computerMove = getMoveName(randomNumber);
+    gameScore = displayResult(computerMove, playerMove); 
+}
+
+function rockClicked(){
+    printMessage(playGame(1));
+}
+  
+function paperClicked(){
+    printMessage(playGame(2));
+}
+  
+function scissorsClicked(){
+    printMessage(playGame(3));
+}
