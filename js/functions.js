@@ -57,13 +57,12 @@ function playGame(playerInput){
 }
 
 function rockClicked(){
-    printMessage(playGame(1));
+    playGame(1);
 }
   
 function paperClicked(){
-    printMessage(playGame(2));
+    playGame(2);
 }
-  
 function scissorsClicked(){
-    printMessage(playGame(3));
+    playGame(3);
 }
