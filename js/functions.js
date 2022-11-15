@@ -44,10 +44,10 @@ function displayResult(argComputerMove, argPlayerMove) {
 }
 
 function playGame(playerInput){
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-    let computerMove = 'nieznany ruch';
-    let playerMove = 'nieznany ruch';
-    let gameScore = 'nierostrzygnięty'
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
+    let computerMove = 'nieznany ruch',
+        playerMove = 'nieznany ruch',
+        gameScore = 'nierostrzygnięty';
 
 
     clearMessages();
