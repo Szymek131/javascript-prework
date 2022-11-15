@@ -43,5 +43,5 @@ const playGame = function (playerInput){
     const computerMove = getMoveName(randomNumber);
     const playerMove = getMoveName(playerInput);
 
-    gameScore = displayResult(computerMove, playerMove); 
+    displayResult(computerMove, playerMove); 
 }
