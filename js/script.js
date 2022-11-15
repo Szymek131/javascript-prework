@@ -1,9 +1,15 @@
 {
-    let paperButton = document.getElementById('play-paper'),
-    rockButton = document.getElementById('play-rock'),
-    scissorsButton = document.getElementById('play-scissors');
+    const rockButton = document.getElementById('play-rock');
+    const paperButton = document.getElementById('play-paper');
+    const scissorsButton = document.getElementById('play-scissors');
 
-    paperButton.addEventListener('click', paperClicked);
-    rockButton.addEventListener('click', rockClicked);
-    scissorsButton.addEventListener('click', scissorsClicked);
+    rockButton.addEventListener('click', function(){
+        playGame(1);
+    });
+    paperButton.addEventListener('click', function(){
+        playGame(2);
+    });
+    scissorsButton.addEventListener('click', function(){
+        playGame(3);
+    });
 }
